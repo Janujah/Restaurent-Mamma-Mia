@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamma-Mia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fb008444ce.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div class="header">
+        <div class="headerLogo">
+            <a href="#homePage"><img src="images/Mamma_Mia.png" alt="Logo" class="headerLogoImage" /></a>
+            <a href="#homePage">
+                <div class="headerLogoName">Mamma Mia</div>
+            </a>
+        </div>
+        <nav>
+            <div class="headerNavLinks">
+                <ul>
+                    <li>
+                        <a href="#homePage">Home <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown">
+                            <a href="#galleryOfMammaMia">Gallery</a>
+                            <a href="#ourServices">Our services</a>
+                        </div>
+                    </li>
+                    <li><a href="#aboutPage">About</a></li>
+                    <li>
+                        <a href="#banquetsPage">Facilities <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown">
+                            <a href="#banquetsPage">Banquets</a>
+                            <a href="#roomsPage">Rooms</a>
+                        </div>
+                    </li>
+                    <li><a href="#contactUsPage">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Home Page -->
+    <div class="homePage section" id="homePage">
+        <div class="firstHalfOfHomepage">
+            <div class="homePageTextContainer">
+                <p class="homePageHeading">Mamma Mia</p>
+                <p class="homePageSubHeading">Italian Favors</p>
+                <p class="homePageText">
+                    Mamma Mia Italian Flavor Restaurant brings authentic Italian cuisine to your table with fresh,
+                    flavorful dishes. From hand-crafted pizzas to classic pasta, every meal is a true taste of Italy.
+                    Enjoy a warm, inviting atmosphere perfect for any occasion.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="galleryOfMammaMia section" id="galleryOfMammaMia">
+        <h1 class="galleryHeading">Gallery</h1>
+        <div class="gallery">
+            <img src="./images/food-1.jpg" alt="Image1" onclick="openPreview(this)">
+            <img src="./images/food-10.jpg" alt="Image2" onclick="openPreview(this)">
+            <img src="./images/food-11.jpg" alt="Image3" onclick="openPreview(this)">
+            <img src="./images/food-12.jpg" alt="Image4" onclick="openPreview(this)">
+            <img src="./images/food-13.jpg" alt="Image5" onclick="openPreview(this)">
+            <img src="./images/food-14.jpg" alt="Image6" onclick="openPreview(this)">
+            <img src="./images/food-15.jpg" alt="Image6" onclick="openPreview(this)">
+            <img src="./images/food-2.jpg" alt="Image6" onclick="openPreview(this)">
+            <img src="./images/food-3.jpg" alt="Image6" onclick="openPreview(this)">
+            <img src="./images/food-4.jpg" alt="Image6" onclick="openPreview(this)">
+            <img src="./images/food-5.jpg" alt="Image6" onclick="openPreview(this)">
+            <img src="./images/food-6.jpg" alt="Image6" onclick="openPreview(this)">
+            <img src="./images/food-7.jpg" alt="Image6" onclick="openPreview(this)">
+            <img src="./images/food-8.jpg" alt="Image6" onclick="openPreview(this)">
+            <img src="./images/food-9.jpg" alt="Image6" onclick="openPreview(this)">
+        </div>
+
+        <div class="preview" id="preview">
+            <span class="close" onclick="closePreview()">&times;</span>
+            <img id="previewImg" src="" alt="Preview">
+        </div>
+    </div>
+
+    <!-- Our services -->
+    <div class="ourServices" id="ourServices">
+        <h1 class="ourServiceHeading">Our Services</h1>
+        <div class="ourServiceContainer">
+            <div class="slide fade">
+                <div class="slideText">Authentic Italian Cuisine</div>
+                <img src="./images/Authentic Italian Cuisine.jpeg" alt="Slide 1">
+            </div>
+            <div class="slide fade">
+                <div class="slideText">Online Ordering & Delivery</div>
+                <img src="./images/Online Ordering & Delivery.jpg" alt="Slide 2">
+            </div>
+            <div class="slide fade">
+                <div class="slideText">Catering Services</div>
+                <img src="./images/Catering Services.jpg" alt="Slide 3">
+            </div>
+            <div class="slide fade">
+                <div class="slideText">Private Dining & Events</div>
+                <img src="./images/Private Dining & Events.jpg" alt="Slide 4">
+            </div>
+            <div class="slide fade">
+                <div class="slideText">Daily Specials & Promotions</div>
+                <img src="./images/Daily Specials & Promotions.jpeg" alt="Slide 5">
+            </div>
+            <div class="slide fade">
+                <div class="slideText">Vegetarian & Vegan Options</div>
+                <img src="./images/Vegetarian & Vegan Options.jpg" alt="Slide 6">
+            </div>
+            <div class="slide fade">
+                <div class="slideText">Wine Pairing & Bar Services</div>
+                <img src="./images/Wine Pairing & Bar Services.jpg" alt="Slide 7">
+            </div>
+            <div class="slide fade">
+                <div class="slideText">Cooking Classes & Food Experiences</div>
+                <img src="./images/Cooking Classes & Food Experiences.jpg" alt="Slide 8">
+            </div>
+            <div class="slide fade">
+                <div class="slideText">Family-Friendly Menu</div>
+                <img src="./images/Family-Friendly Menu.jpg" alt="Slide 9">
+            </div>
+            <div class="slide fade">
+                <div class="slideText">Gift Cards</div>
+                <img src="./images/Gift Cards.jpg" alt="Slide 10">
+            </div>
+            <div class="slide fade">
+                <div class="slideText">Seasonal & Fresh Ingredients</div>
+                <img src="./images/Seasonal & Fresh Ingredients.jpg" alt="Slide 11">
+            </div>
+            <div class="slide fade">
+                <div class="slideText">Online Reservations</div>
+                <img src="./images/online-Reservation.jpg" alt="Slide 12">
+            </div>
+            <div class="slide fade">
+                <div class="slideText">Rooms Reservations</div>
+                <img src="./images/rooms reservation.jpg" alt="Slide 13">
+            </div>
+
+            <div class="previous" onclick="udjustSlides(-1)">&#10094;</div>
+            <div class="next" onclick="udjustSlides(1)">&#10095;</div>
+        </div>
+    </div>
+
+    <!-- About Page -->
+    <div class="aboutPage section" id="aboutPage">
+        <h1 class="aboutPageContainer">About Us</h1>
+        <div class="aboutPageCOntainer">
+            <img src="./images/About-Page.png" alt="About Image" class="aboutPageImageContent">
+            <p>                
+                At Mamma Mia Italian Flavor Restaurant, we believe that great food brings people together. Our mission is to share the heart and soul of Italy through a menu inspired by traditional recipes and the finest ingredients. Every dish is thoughtfully prepared by our talented chefs, ensuring an authentic experience that delights your senses with every bite. Whether you’re enjoying our signature wood-fired pizzas, savoring our freshly made pastas, or indulging in classic Mediterranean appetizers, each meal reflects the warmth and richness of Italian culture. Our cozy and inviting atmosphere is designed to make every guest feel like family, and we strive to create memorable dining experiences for all. At Mamma Mia, we’re more than just a restaurant; we’re a celebration of Italian heritage, hospitality, and, of course, the joy of good food shared with good company.
+            </p>
+        </div>
+    </div>
+
+    <!-- Banquets -->
+    <div class="banquetsPage section" id="banquetsPage">
+        <h1 class="banquetsPageContainer">Banquets</h1>
+        <div class="banquetsPageCOntainer">
+            <img src="./images/banquet.png" alt="Banquets Page Image" class="banquetsPageImageContent">
+            <p>Our banquet service at Mamma Mia Italian Flavor Restaurant offers a perfect blend of exceptional Italian cuisine and elegant event planning. Whether it's a wedding, corporate event, or a family celebration, we provide a tailored experience to suit your needs. Our dedicated team will ensure that every detail is taken care of, from customized menus featuring our finest Italian dishes to seamless service that creates a memorable atmosphere for your guests. With spacious banquet facilities and a welcoming ambiance, we promise to make your special event a remarkable occasion.
+            </p>
+        </div>
+    </div>
+
+    <!-- Rooms -->
+    <div class="roomsPage section" id="roomsPage">
+        <h1 class="roomsPageContainer">Rooms</h1>
+        <div class="roomsPageCOntainer">
+            <img src="./images/for-room-reservation.png" alt="Rooms Page Image" class="roomsPageImageContent">
+            <p>At Mamma Mia Italian Flavor Restaurant, we offer comfortable and inviting rooms for your dining or event needs. Whether you're planning an intimate gathering or a larger celebration, our rooms provide the perfect setting for any occasion. With flexible booking options and personalized service, we ensure that every detail is taken care of so you can focus on enjoying your time with family, friends, or colleagues. Reserve your room today and experience the warmth and charm of Mamma Mia in a private and relaxed environment.
+            </p>
+        </div>
+    </div>
+
+    <!-- Contact Us -->
+    <div class="contactUsPage" id="contactUsPage">
+        <h1 class="contactUsPageHeading">Contact Information</h1>
+        <div class="contactUsPageContainer">
+            <div class="contactInformation">
+                <div class="contactDetails">
+                    <p><strong>Address:</strong> Mamma mia, Colombo, Sri Lanka.</p>
+                    <p><strong>Contact No.:</strong> +94 0123 456 789</p>
+                </div>
+
+                <div class="map-section">
+                    <h2>Our Location</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d374079.69990962517!2d79.96637387994143!3d7.049943888346514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smamma%20mia!5e0!3m2!1sen!2slk!4v1743247475950!5m2!1sen!2slk"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="formSection">
+                <h2>Connect with Us</h2>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="contact">Contact No.:</label>
+                    <input type="tel" id="contact" name="contact" required>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <label>Are you a new customer or an already visited customer?</label>
+                    <div class="customerStatus">
+                        <input type="radio" id="newCustomer" name="customerStatus" value="new" required>
+                        <label for="newCustomer">New Customer</label>
+                        <input type="radio" id="visitedCustomer" name="customerStatus" value="visited" required>
+                        <label for="visitedCustomer">Visited Customer</label>
+                    </div>
+
+                    <br><br>
+                    <button type="submit" class="submitBtn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footerBackground">
+        <footer class="footer">
+            <div class="footerSection logo">
+                <div class="footerLogoName">Mamma Mia</div>
+                <img src="./images/Mamma_Mia.png" alt="Logo" class="footerLogoImage" />
+            </div>
+
+            <div class="footerSection socialLinks">
+                <h3>Contact Us</h3>
+                <p><i class="fa-solid fa-address-book" style="color: #ffffff;"></i> Mamma mia, Colombo, Sri Lanka.</p>
+                <p><i class="fa-solid fa-phone" style="color: #ffffff;"></i> +94 0123 456 789</p>
+                <p><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> info@mammamiahotel.com</p>
+                <h3>Follow Us</h3><br>
+                <a href="#" target="_blank" style="font-size: 15px;"><i class="fa-brands fa-facebook"
+                        style="color: #ffffff;"></i> Facebook</a><br /><br />
+                <a href="#" target="_blank" style="font-size: 15px;"><i class="fa-brands fa-instagram"
+                        style="color: #ffffff;"></i> Instagram</a><br /><br />
+                <a href="#" target="_blank" style="font-size: 15px;"><i class="fa-brands fa-x-twitter"
+                        style="color: #ffffff;"></i> Twitter</a>
+            </div>
+
+            <div class="footerSection contactForm">
+                <h3>Get in Touch</h3>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+
+            <div class="footerSection subscribe">
+                <h3>Subscribe to Our Newsletter</h3>
+                <input type="email" placeholder="Enter your email" required>
+                <button class="btn">Subscribe</button>
+            </div>
+
+        </footer>
+        <div class="footerBottom">
+            <p>&copy; 2025 Mamma Mia. All rights reserved.</p>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
