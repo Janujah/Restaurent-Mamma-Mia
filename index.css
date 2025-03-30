@@ -126,7 +126,6 @@ h1{
 
 /* Home page style */
 .homePage .firstHalfOfHomepage {
-    background-image: url(../images/Image1.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
